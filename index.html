@@ -8,6 +8,40 @@
     <title>Calculadora de médias</title>
 </head>
 <body>
-    
+    <header class="header">
+        <div class="container">
+            <img src="images/logo.png" alt="Logo" class="header__logo">
+            <h1 class="header__title">Calculadora de médias</h1>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+
+            <form action="#" class="grade-form">
+                <input type="text" id="activity-name" class="form-input" placeholder="Nome da atividade">
+                <input type="number" id="grade" placeholder="0" min="0" max="10" class="form-input">
+                <button type="submit" class="form-btn">Adicionar +</button>
+            </form>
+
+            <table class="grade-table">
+                <thead class="grade-table__header">
+                    <tr>
+                        <th class="grades-table__header-item ">Atividade</th>
+                        <th class="grades-table__header-item ">Nota</th>
+                        <th class="grades-table__header-item ">Ações</th>
+                    </tr>
+                </thead>
+                <tbody class="grades-table__body">
+                    <tr class="grades-table__row">
+                        <td class="grades-table__cell">Média final</td>
+                        <td class="grades-table__cell">-</td>
+                        <td class="grades-table__cell">-</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </main>
 </body>
 </html>
