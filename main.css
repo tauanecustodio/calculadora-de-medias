@@ -3,3 +3,76 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #e5f8ff;
+}
+
+.header, .main {
+    padding: 1rem 2rem;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* ----------------------------header---------------------------- */
+
+.header .container {
+    display: flex;
+}
+
+.header__logo {
+    width: 2rem;
+}
+
+.header__title {
+    font-size: 2rem;
+    margin-left: 1rem;
+}
+
+/* ----------------------------main---------------------------- */
+
+.grade-form {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.grade-form__input {
+    background-color: #fff;
+    border-color: transparent transparent #000;
+    padding: 0.3rem;
+    font-size: 0.9rem;
+}
+
+.grade-form__btn {
+    background-color: #1b881f;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.grade-table {
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+.grades-table__cell, .grades-table__header-item {
+    font-size: 0.9rem;
+    padding: 0.3rem;
+}
+
+.grade-table__header {
+    border-bottom: 2px solid #000;
+}
+
+.grade-table__footer, .grades-table__body tr {
+    border-bottom: 1.5px solid #0000004d;
+}

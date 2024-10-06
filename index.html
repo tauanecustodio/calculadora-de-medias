@@ -19,26 +19,33 @@
         <div class="container">
 
             <form action="#" class="grade-form">
-                <input type="text" id="activity-name" class="form-input" placeholder="Nome da atividade">
-                <input type="number" id="grade" placeholder="0" min="0" max="10" class="form-input">
-                <button type="submit" class="form-btn">Adicionar +</button>
+                <input type="text" id="activity-name" class="grade-form__input" placeholder="Nome da atividade">
+                <input type="number" id="grade" placeholder="Nota" min="0" max="10" class="grade-form__input">
+                <button type="submit" class="grade-form__btn">Adicionar +</button>
             </form>
 
             <table class="grade-table">
                 <thead class="grade-table__header">
                     <tr>
-                        <th class="grades-table__header-item ">Atividade</th>
+                        <th class="grades-table__header-item ">Nome da atividade</th>
                         <th class="grades-table__header-item ">Nota</th>
-                        <th class="grades-table__header-item ">Ações</th>
+                        <th class="grades-table__header-item ">Aprovado?</th>
                     </tr>
                 </thead>
-                <tbody class="grades-table__body">
+                <!-- <tbody class="grades-table__body">
                     <tr class="grades-table__row">
                         <td class="grades-table__cell">Média final</td>
                         <td class="grades-table__cell">-</td>
                         <td class="grades-table__cell">-</td>
                     </tr>
-                </tbody>
+                </tbody> -->
+                <tfoot class="grade-table__footer">
+                    <tr class="grades-table__row">
+                        <td class="grades-table__cell">Média final</td>
+                        <td class="grades-table__cell">-</td>
+                        <td class="grades-table__cell">-</td>
+                    </tr>
+                </tfoot>
             </table>
 
         </div>
