@@ -14,13 +14,13 @@
             <h1 class="header__title">Calculadora de médias</h1>
         </div>
     </header>
-
+    
     <main class="main">
         <div class="container">
 
-            <form action="#" class="grade-form">
-                <input type="text" id="activity-name" class="grade-form__input" placeholder="Nome da atividade">
-                <input type="number" id="grade" placeholder="Nota" min="0" max="10" class="grade-form__input">
+            <form action="#" class="grade-form" id="grade-form">
+                <input type="text" id="activity-name" class="grade-form__input" placeholder="Nome da atividade" required>
+                <input type="number" id="grade" placeholder="Nota" min="0" max="10" class="grade-form__input" required>
                 <button type="submit" class="grade-form__btn">Adicionar +</button>
             </form>
 
@@ -32,14 +32,9 @@
                         <th class="grades-table__header-item ">Aprovado?</th>
                     </tr>
                 </thead>
-                <!-- <tbody class="grades-table__body">
-                    <tr class="grades-table__row">
-                        <td class="grades-table__cell">Média final</td>
-                        <td class="grades-table__cell">-</td>
-                        <td class="grades-table__cell">-</td>
-                    </tr>
-                </tbody> -->
-                <tfoot class="grade-table__footer">
+                <tbody class="grades-table__body" id="table-body">
+                </tbody>
+                <tfoot class="grade-table__footer" id="table-footer">
                     <tr class="grades-table__row">
                         <td class="grades-table__cell">Média final</td>
                         <td class="grades-table__cell">-</td>
@@ -50,5 +45,7 @@
 
         </div>
     </main>
+
+    <script src="main.js"></script>
 </body>
 </html>
