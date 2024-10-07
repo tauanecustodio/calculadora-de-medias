@@ -14,11 +14,15 @@ body {
 }
 
 .container {
-    max-width: 900px;
+    max-width: 700px;
     margin: 0 auto;
 }
 
 /* ----------------------------header---------------------------- */
+
+.header {
+    margin-top: 4rem;
+}
 
 .header .container {
     display: flex;
@@ -38,7 +42,7 @@ body {
 .grade-form {
     display: flex;
     gap: 1rem;
-    margin-bottom: 2rem;
+    position: relative
 }
 
 .grade-form__input {
@@ -58,10 +62,20 @@ body {
     cursor: pointer;
 }
 
+#alert {
+    color: #f44336;
+    padding: 0.5rem;
+    font-size: 0.9rem;
+    position: absolute;
+    bottom: -100%;
+    left: 0%;
+}
+
 .grade-table {
     width: 100%;
     text-align: center;
     border-collapse: collapse;
+    margin-top: 2.5rem;
 }
 
 .grade-table img {
