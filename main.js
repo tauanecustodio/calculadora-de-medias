@@ -3,7 +3,7 @@
 const gradeForm = document.getElementById('grade-form');
 const textResult = document.getElementById('result-average');
 const statusResult = document.getElementById('result-status');
-const alertCamp = document.getElementById('alert')
+const alertCamp = document.getElementById('alert');
 
 let countActivity = 0;
 let averageGrade = 0;
@@ -20,12 +20,12 @@ const tableFooter = document.getElementById('table-footer');
 
 // --------- function declarations ---------
 
-function validateInputs() {
-    if(activity.value === '' || grade.value === '') {
+function validateInputs(activityName, gradeValue) {
+    if(activityName === '' || gradeValue === '') {
         alertCamp.textContent = 'Todos os campos são obrigatórios.';
         return false;
-    } else if(!/^\d+$/.test(grade.value) || grade.value < 0 || grade.value > 10) {
-        alertCamp.textContent = 'A nota precisa ser um número inteiro entre 0 e 10.';
+    } else if(!/^\d+(\.\d+)?$/.test(gradeValue) || gradeValue < 0 || gradeValue > 10) {
+        alertCamp.textContent = 'A nota precisa ser um número entre 0 e 10.';
         return false;
     }
     return true;
@@ -70,12 +70,15 @@ function clearForm() {
 gradeForm.addEventListener('submit', (e) => {
     e.preventDefault();
 
-    if(!validateInputs()) {
+    const activityName = activity.value;
+    const gradeValue = grade.value;
+
+    if(!validateInputs(activityName,gradeValue)) {
         return;
     };
 
-    addRowToTable(activity.value, grade.value);
-    calcAverage(grade.value);
+    addRowToTable(activityName, gradeValue);
+    calcAverage(gradeValue);
 
     clearForm();
 });
