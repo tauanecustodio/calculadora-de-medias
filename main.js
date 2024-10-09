@@ -1,7 +1,6 @@
 // --------- variables declaration ---------
 
-// const minGrade = parseFloat(prompt("Qual a nota mínima?"));
-const minGrade = 7;
+const minGrade = parseFloat(prompt("Qual a nota mínima?"));
 
 let averageGrade = 0;
 const activityArr = [];
@@ -83,7 +82,7 @@ function clearForm() {
 gradeForm.addEventListener('submit', (e) => {
     e.preventDefault();
 
-    const activityName = activity.value.trim();
+    const activityName = activity.value.trim().toLowerCase();
     const gradeValue = parseFloat(grade.value);
     
     const validationResult = validateInputs(activityName, gradeValue);
