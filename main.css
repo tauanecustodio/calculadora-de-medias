@@ -7,6 +7,7 @@
 
 body {
     background-color: #e7e7e7;
+    width: 100vw;
 }
 
 .header, .main {
@@ -24,6 +25,7 @@ body {
 .header .container {
     margin-top: 4rem;
     display: flex;
+    align-items: center;
 }
 
 .header__logo {
@@ -42,6 +44,7 @@ body {
 
 .grade-form {
     display: flex;
+    flex-wrap: wrap;
     gap: 1rem;
     position: relative
 }
@@ -68,14 +71,15 @@ body {
     padding: 0.5rem;
     font-size: 0.9rem;
     position: absolute;
-    bottom: -100%;
+    bottom: 0%;
     left: 0%;
+    transform: translateY(100%);
 }
 
 /* table */
 
 .grade-table {
-    width: 100%;
+    width: 100%; 
     text-align: center;
     border-collapse: collapse;
     margin-top: 2.5rem;
