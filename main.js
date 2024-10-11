@@ -1,6 +1,6 @@
 // --------- variables declaration ---------
 
-const minGrade = parseFloat(prompt("Qual a nota mínima?"));
+const minGrade = parseFloat(prompt("Qual a nota mínima? (1 - 10)"));
 
 let averageGrade = 0;
 const activityArr = [];
