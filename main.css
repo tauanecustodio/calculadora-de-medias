@@ -153,3 +153,30 @@ body {
     border-radius: 4px;
     display: inline-block;
 }
+
+/* ----------------------------medias---------------------------- */
+
+@media (max-width: 900px) {
+
+    .content {
+        padding: 1rem;
+    }
+    .header__logo {
+        width: 2rem;
+    }
+    .header__title {
+        font-size: 1.8rem;
+    }
+    .grade-form__input, .grade-form__btn {
+        font-size: 0.9rem;
+    }
+    #alert {
+        font-size: 0.8rem;
+    }
+    .grade-table img {
+        width: 1.4rem;
+    }
+    .grades-table__cell, .grades-table__header-item {
+        font-size: 0.8rem;
+    }
+}
